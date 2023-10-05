@@ -38,7 +38,7 @@
 
 /* Common styles for both pricing sections */
 .contact {
-    background-color: #f5f5f5;
+    
     padding: 5% 0;
     text-align: center;
     height: auto;
@@ -49,10 +49,6 @@
   
 }
 
-.contact h2 {
-    margin-bottom: 5%;
-    color: #333;
-}
 
 .contact-card {
     background-color: #fff;
@@ -98,9 +94,7 @@ color: #66bfbf;
         padding: 10% 0;
     }
 
-    .contact h2 {
-        font-size: 1.5rem;
-    }
+   
 
     .contact-card {
         padding: 10%;
