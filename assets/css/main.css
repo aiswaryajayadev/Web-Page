@@ -31,49 +31,30 @@
 
 /*--------------------------------------------------------------
 # General
---------------------------------------------------------------*/
-body {
-   
-  margin : 10%;
-  font-family: var(--font-default);
-  color: var(--color-default);
-  overflow-x: hidden;
-}
 
-a {
-  color: var(--color-primary);
-  text-decoration: none;
-}
 
-a:hover {
-  color: #eaf6f6;
-  text-decoration: none;
-}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-primary);
-}
 /* Add this CSS to your existing stylesheet or create a new CSS file */
 
 /* Common styles for both pricing sections */
-.pricing2, .pricing {
+.contact {
     background-color: #f5f5f5;
     padding: 5% 0;
     text-align: center;
     height: auto;
+    margin : 10%;
+    overflow-x: hidden;
+    font-family: var(--font-default);
+  color: var(--color-default);
+  
 }
 
-.pricing2 h2, .pricing h2 {
+.contact h2 {
     margin-bottom: 5%;
     color: #333;
 }
 
-.pricing-card2, .pricing-card {
+.contact-card {
     background-color: #fff;
     padding: 5%;
     border-radius: 5px;
@@ -81,35 +62,27 @@ h6 {
     margin-bottom: 5%;
 }
 
-.pricing-card2 h3, .pricing-card h3 {
+.contact-card h3 {
     font-size: 2rem;
     color: #333;
 }
 
-.pricing-card2 p {
+.contact-card2 p {
     color: #666;
     margin: 10px 0;
 }
-.pricing-card p {
+.contact-card p {
 color: #66bfbf;
     margin: 10px 0;
 }
-.pricing-card2 h4, .pricing-card h4 {
+.contact-card h4 {
     font-size: 1.5rem;
     color: #66bfbf;
 }
 
-.pricing-card2 .btn-primary, .pricing-card .btn-primary {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-}
 
-.pricing-card2 .btn-primary:hover, .pricing-card .btn-primary:hover {
-    background-color: #0056b3;
-}
 
-.pricing-card {
+.contact-card {
   background: linear-gradient(
     to right,
     #8ed1f5 0%,
@@ -121,23 +94,23 @@ color: #66bfbf;
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
     /* Adjustments for smaller screens */
-    .pricing2, .pricing {
+    .contact {
         padding: 10% 0;
     }
 
-    .pricing2 h2, .pricing h2 {
+    .contact h2 {
         font-size: 1.5rem;
     }
 
-    .pricing-card2, .pricing-card {
+    .contact-card {
         padding: 10%;
     }
 
-    .pricing-card2 h3, .pricing-card h3 {
+    .contact-card h3 {
         font-size: 1.2rem;
     }
 
-    .pricing-card2 h4, .pricing-card h4 {
+    .contact-card h4 {
         font-size: 1rem;
     }
 }
@@ -241,37 +214,6 @@ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
-#preloader {
-  position: fixed;
-  inset: 0;
-  z-index: 999999;
-  overflow: hidden;
-  background: #fff;
-  transition: all 0.6s ease-out;
-}
-
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #fff;
-  border-color: var(--color-primary) transparent var(--color-primary) transparent;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: animate-preloader 1.5s linear infinite;
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
@@ -317,97 +259,12 @@ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   margin-bottom: 0;
 }
 
-.contact .php-email-form {
-  width: 100%;
-  background: #fff;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
-  padding: 30px;
-}
 
-.contact .php-email-form .form-group {
-  padding-bottom: 20px;
-}
 
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #df1529;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
 
-.contact .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
 
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
 
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
 
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #059652;
-  border-top-color: #fff;
-  animation: animate-loading 1s linear infinite;
-}
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-}
 
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--color-primary);
-}
 
-.contact .php-email-form input {
-  height: 44px;
-}
-
-.contact .php-email-form textarea {
-  padding: 10px 12px;
-}
-
-.contact .php-email-form button[type=submit] {
-  background: var(--color-primary);
-  border: 0;
-  padding: 10px 35px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 5px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: rgba(254, 185, 0, 0.8);
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
